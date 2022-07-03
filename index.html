@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>StateV - ToDo, ToDo, ToDo</title>
+  </head>
+  <body>
+
+    <div class="teaserbg"></div>
+
+    <div class="container">
+      <h1>Hey hey, mach mal<br>deine <span>ToDo's</span> okay?</h1>
+      <div class="dark-bar">
+        Welche Punkte möchtest du hinzufügen?
+        <form class="js-form" id="form">
+          <input type="text" id="input" size="40" class="js-todo-input" placeholder="neues ToDo eingeben..">
+          <button id="addButton">Los!</button>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="red-bar">
+            <h3>Not done</h3>
+            <hr>
+             <ul id="aus" class="todo-list js-todo-list"></ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="red-bar">
+            <h3>Done</h3>
+            <hr>
+            <ul id="ausready" class="todo-list">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main-r.js"></script>
+
+  </body>
+</html>
