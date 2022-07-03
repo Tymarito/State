@@ -1,0 +1,166 @@
+body {
+  font-size: 18px;
+  background: #18181b;
+  color: #fff;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 50px 0;
+}
+
+h1 span {
+  background-color: #bd343e;
+  padding: 2px 10px;
+}
+
+.red-bar {
+  background-color: #bd343e;
+  padding: 15px 15px 10px 15px;
+}
+
+.dark-bar {
+  background-color: #0c0c0e;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+svg {
+  width: 64px;
+  height: 64px;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.todo-item {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.done span {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.tick {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tick::before {
+  content: '✓';
+  font-size: 20px;
+  display: none;
+}
+
+.done .tick::before {
+  display: inline;
+}
+
+.delete-todo {
+  border: none;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete-todo svg {
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #222429;
+  color: #fff;
+}
+
+.todo-list:empty {
+  display: none;
+}
+
+.todo-list:empty + .empty-state {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  margin-top: 15px;
+}
+
+button#addButton {
+  background-color: #bd343e;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+}
+
+hr {
+  background-color: #fff;
+  height: 3px !important;
+  opacity: 1 !important;
+  width: 100%;
+}
+
+input.middle:focus {
+    outline-width: 0;
+}
+
+.teaserbg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../img/bg.jpg');
+}
+
+.teaserbg:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(24,24,27);
+  background: linear-gradient(0deg, rgba(24,24,27,1) 12%, rgba(0,212,255,0) 100%);
+}
